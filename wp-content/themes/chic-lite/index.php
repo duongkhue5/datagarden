@@ -13,10 +13,10 @@
  */
 
 get_header(); ?>
-<div id="primary" class="content-area">        
+<!-- <div id="primary" class="content-area">        
     <main id="main" class="site-main">
 
-	<?php
+	<php
 	if ( have_posts() ) :
 
 		/* Start the Loop */
@@ -37,10 +37,10 @@ get_header(); ?>
 
 	endif; ?>
 
-	</main><!-- #main -->
+	</main><-- #main --
     
-    <?php
-    /**
+    <php
+    **
      * After Posts hook
      * @hooked chic_lite_navigation - 15
     */
@@ -48,7 +48,7 @@ get_header(); ?>
     
     ?>
     
-</div><!-- #primary -->
+</div>#primary -->
 
 <?php
 get_sidebar();

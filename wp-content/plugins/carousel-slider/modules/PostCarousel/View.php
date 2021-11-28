@@ -80,45 +80,45 @@ class View extends AbstractView {
 			// $html .= '<div class="carousel-slider__post-details-info">';
 
 			// Post author
-			$_author_url  = esc_url( get_author_posts_url( intval( $post->post_author ) ) );
-			$_author_name = esc_html( get_the_author_meta( 'display_name', intval( $post->post_author ) ) );
+			// $_author_url  = esc_url( get_author_posts_url( intval( $post->post_author ) ) );
+			// $_author_name = esc_html( get_the_author_meta( 'display_name', intval( $post->post_author ) ) );
 
-			$html .= sprintf( '<div class="carousel-slider__post-author"><a class="carousel-slider__post-author-link" href="%s">%s</a></div>',
-				$_author_url,
-				$_author_name
-			);
+			// $html .= sprintf( '<div class="carousel-slider__post-author"><a class="carousel-slider__post-author-link" href="%s">%s</a></div>',
+			// 	$_author_url,
+			// 	$_author_name
+			// );
 			// Post date
-			$_created  = strtotime( $post->post_date );
-			$_modified = strtotime( $post->post_modified );
+			// $_created  = strtotime( $post->post_date );
+			// $_modified = strtotime( $post->post_modified );
 
-			if ( $_created !== $_modified ) {
+			// if ( $_created !== $_modified ) {
 
-				$html .= sprintf( '<time class="carousel-slider__post-publication-date" datetime="%s">%s</time>',
-					date_i18n( 'c', $_modified ),
-					date_i18n( get_option( 'date_format' ), $_modified )
-				);
+			// 	$html .= sprintf( '<time class="carousel-slider__post-publication-date" datetime="%s">%s</time>',
+			// 		date_i18n( 'c', $_modified ),
+			// 		date_i18n( get_option( 'date_format' ), $_modified )
+			// 	);
 
-			} else {
+			// } else {
 
-				$html .= sprintf( '<time class="carousel-slider__post-publication-date" datetime="%s">%s</time>',
-					date_i18n( 'c', $_created ),
-					date_i18n( get_option( 'date_format' ), $_created )
-				);
-			}
-			$html .= '</div>';
-			$html .= '</div>';
+			// 	$html .= sprintf( '<time class="carousel-slider__post-publication-date" datetime="%s">%s</time>',
+			// 		date_i18n( 'c', $_created ),
+			// 		date_i18n( get_option( 'date_format' ), $_created )
+			// 	);
+			// }
+			// $html .= '</div>';
+			// $html .= '</div>';
 
 			// Post catagory
 			$cat_link  = isset( $category[0]->term_id ) ? esc_url( get_category_link( $category[0]->term_id ) ) : '';
 			$cat_title = isset( $category[0]->name ) ? esc_html( $category[0]->name ) : '';
-			$html      .= '<div class="carousel-slider__post-category">';
-			if ( isset( $cat_link ) ) {
-				$html .= sprintf( '<a class="carousel-slider__post-category-link" href="%s">%s</a>',
-					$cat_link,
-					$cat_title
-				);
-			}
-			$html .= '</div>';
+			// $html      .= '<div class="carousel-slider__post-category">';
+			// if ( isset( $cat_link ) ) {
+			// 	$html .= sprintf( '<a class="carousel-slider__post-category-link" href="%s">%s</a>',
+			// 		$cat_link,
+			// 		$cat_title
+			// 	);
+			// }
+			// $html .= '</div>';
 			$html .= '</footer>';
 			$html .= '</div>';
 			$html .= '</div>' . PHP_EOL;

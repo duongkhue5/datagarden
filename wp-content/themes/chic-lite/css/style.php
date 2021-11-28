@@ -85,6 +85,19 @@ function chic_lite_dynamic_css(){
         max-width: 1220px;
         margin: 0 auto;
     }
+    .carousel-slider__post-title h2 {
+        font-size: 12px;
+        color: #000;
+    }
+    .widget_carousel_slider {
+        margin-bottom: 50px !important;
+    }
+    .carousel-slider__post-title {
+        min-height: auto;
+    }
+    .widget-title{
+        margin: 30px 0px !important;
+    }
 
     <?php echo "</style>";
 }
