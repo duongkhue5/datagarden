@@ -98,6 +98,9 @@ function chic_lite_dynamic_css(){
     .widget-title{
         margin: 30px 0px !important;
     }
+    .woocommerce-ordering, .woocommerce-result-count {
+        display: none;
+    }
 
     <?php echo "</style>";
 }

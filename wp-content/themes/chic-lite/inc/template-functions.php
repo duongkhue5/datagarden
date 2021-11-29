@@ -235,15 +235,6 @@ function chic_lite_content_start(){
         }
 
         ?>
-        <header class="page-header" <?php if( $background_image ){ ?> style="background-image: url( '<?php echo esc_url( $background_image ); ?>' );"<?php } ?> >
-            <div class="container">
-                <?php 
-                the_archive_title(); 
-                the_archive_description( '<div class="archive-description">', '</div>' ); 
-                chic_lite_breadcrumb(); 
-                ?>
-            </div>
-        </header>
         <?php
     }
     ?>
