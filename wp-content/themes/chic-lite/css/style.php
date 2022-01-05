@@ -98,7 +98,14 @@ function chic_lite_dynamic_css(){
     .widget-title{
         margin: 30px 0px !important;
     }
-    .woocommerce-ordering, .woocommerce-result-count {
+    .woocommerce-ordering, .woocommerce-result-count, .breadcrumb-wrapper {
+        display: none;
+    }
+    .single-style-four .site-main .entry-header .entry-title {
+        text-align: center;
+        font-family: Nunito Sans !important;
+    }
+    .post-navigation {
         display: none;
     }
 

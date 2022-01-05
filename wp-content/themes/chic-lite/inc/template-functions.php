@@ -201,14 +201,14 @@ if( ! function_exists( 'chic_lite_top_bar' ) ) :
 */
 function chic_lite_top_bar(){
     if( ! ( chic_lite_is_woocommerce_activated() && ( is_shop() || is_product_category() || is_product_tag() ) ) && !( is_front_page() || is_home() ) && ( is_singular() || is_archive() || is_search() ) ){ ?>
-        <div class="top-bar">
+        <!-- <div class="top-bar">
     		<div class="container">
-            <?php
+            <php
                 //Breadcrumb
                 chic_lite_breadcrumb(); 
             ?>
     		</div>
-    	</div>   
+    	</div>    -->
         <?php 
     }    
 }
